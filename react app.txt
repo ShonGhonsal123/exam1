@@ -1,0 +1,129 @@
+Create empty folder
+
+node -v 
+npm install -g create-react-app
+Set-ExecutionPolicy Bypass -Scope Process
+create-react-app reactproject
+
+in terminal :
+cd reactprojecct
+npm start
+
+1.Funtion component
+Now right click on src create new file (Funtions.js)
+write 
+
+function Function(){
+     return(
+          <>
+          <div>
+          <h1>My first function</h1>
+          </div>
+          <div>
+          <p>The wave crashed and hit the sandcastle head-on.
+                The sandcastle began to melt under the waves force and as the wave receded, 
+                half the sandcastle was gone.
+                 The next wave hit,
+                not quite as strong,
+                 but still managed to cover the remains of the sandcastle and take more of it away. 
+                 The third wave, a big one,
+                  crashed over the sandcastle completely covering and engulfing it. 
+                 When it receded, there was no trace the sandcastle ever existed and hours of hard work disappeared forever.</p>
+                 </div>
+                 <div>
+                 <table border="|">
+                 <tr>
+                <th>Name</th>
+                <th>Seat no</th>
+                <th>Subject</th>
+            </tr>
+            <tr>
+                <td>Piyush</td>
+                <td>54043</td>
+                <td>Internet Programming</td>
+            </tr>
+            <tr>
+                <td>Shon</td>
+                <td>54045</td>
+                <td>Internet Programming</td>
+            </tr>
+                 </table>
+                 </div>
+                 <div>
+                 <img src="https://pngimg.com/d/mario_PNG125.png" width={200} height={200}></img>
+               
+          </div>
+          </>
+     );
+}
+export default Function;
+
+
+in index.js
+import Funtion from './Funtion';
+on 4 line comment all
+on 11 line remove app and put <Function>
+
+and run
+
+
+
+
+2.Class component
+create new file FirstClass
+
+import react from "react";
+class FirstClass extends react.Component{
+     render()
+     {
+          return(
+               <>
+          <div>
+          <h1>My first Class</h1>
+          </div>
+          <div>
+          <p>The wave crashed and hit the sandcastle head-on.
+                The sandcastle began to melt under the waves force and as the wave receded, 
+                half the sandcastle was gone.
+                 The next wave hit,
+                not quite as strong,
+                 but still managed to cover the remains of the sandcastle and take more of it away. 
+                 The third wave, a big one,
+                  crashed over the sandcastle completely covering and engulfing it. 
+                 When it receded, there was no trace the sandcastle ever existed and hours of hard work disappeared forever.</p>
+                 </div>
+                 <div>
+                 <table border="|">
+                 <tr>
+                <th>Name</th>
+                <th>Seat no</th>
+                <th>Subject</th>
+            </tr>
+            <tr>
+                <td>Piyush</td>
+                <td>54043</td>
+                <td>Internet Programming</td>
+            </tr>
+            <tr>
+                <td>Shon</td>
+                <td>54045</td>
+                <td>Internet Programming</td>
+            </tr>
+                 </table>
+                 </div>
+                 <div>
+                 <img src="https://pngimg.com/d/mario_PNG125.png" width={200} height={200}></img>
+               
+          </div>
+          </>
+          );
+     }
+
+}
+export default FirstClass;
+
+
+go to index.js
+import Firstclass from './FirstClass';
+on 12 line <Firstclass/> insted of 
+save and run

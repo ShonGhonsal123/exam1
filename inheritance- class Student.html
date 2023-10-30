@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        // Define the Student class
+class Student {
+  constructor(student_name, roll_no, age, branch) {
+    this.student_name = student_name;
+    this.roll_no = roll_no;
+    this.age = age;
+    this.branch = branch;
+  }
+
+  display() {
+    console.log(`Student Name: ${this.student_name}`);
+    console.log(`Roll No: ${this.roll_no}`);
+    console.log(`Age: ${this.age}`);
+    console.log(`Branch: ${this.branch}`);
+  }
+}
+
+// Create two student objects
+const student1 = new Student("John Doe", "2021001", 20, "Computer Science");
+const student2 = new Student("Jane Smith", "2021002", 21, "Electrical Engineering");
+
+// Menu-driven program
+  console.log("Menu:");
+  console.log("1. Display Student 1 Details");
+  console.log("2. Display Student 2 Details");
+  console.log("3. Exit");
+
+  const choice = parseInt(prompt("Enter your choice:"));
+
+  switch (choice) {
+    case 1:
+      console.log("Student 1 Details:");
+      student1.display();
+      break;
+    case 2:
+      console.log("Student 2 Details:");
+      student2.display();
+      break;
+    case 3:
+      console.log("Exiting the program");
+      process.exit(0);
+    default:
+      console.log("Invalid choice. Please enter a valid option.");
+  }
+
+    </script>
+</body>
+</html>
